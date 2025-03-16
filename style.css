@@ -173,6 +173,16 @@
   max-width: 1200px;
 }
 
+.p-home__feature-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .p-home__section-title {
   font-size: 32px;
   margin: 40px 40px;
@@ -206,13 +216,6 @@
   text-align: left;
 }
 
-.p-home__feature-item {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
 .p-home__how-it-works {
   margin: 0 auto;
   padding: 60px 20px;
@@ -227,8 +230,13 @@
 }
 
 .p-home__step {
-  text-align: center;
   background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .p-home__step-number {
@@ -244,6 +252,42 @@
   border-radius: 50%;
   background-color: blue;
   margin-bottom: 20px;
+}
+
+.p-home__cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.p-home__cta-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.p-home__cta-title::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 3px;
+  background-color: blue;
+  margin: 20px auto;
+}
+.p-home__cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+.p-home__cta-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 1024px) {
