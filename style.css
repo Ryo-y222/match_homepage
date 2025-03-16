@@ -7,7 +7,15 @@
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-nav {
+.l-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.l-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,35 +23,35 @@ nav {
   padding: 10px 20px;
 }
 
-.logo {
+.l-header__logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
 }
 
-.nav-links {
+.l-nav__list {
   display: flex;
   justify-content: space-between;
   width: 38%;
 }
 
-.nav-links li {
+.l-nav__item {
   list-style: none;
   margin-right: 20px;
 }
 
-.nav-links a {
+.c-nav__link {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-.burger {
+.c-burger {
   display: none;
   cursor: pointer;
 }
 
-.burger div {
+.c-burger div {
   width: 25px;
   height: 3px;
   background-color: white;
@@ -51,12 +59,195 @@ nav {
   transition: all 0.3s ease;
 }
 
-.nav-active {
+.js-nav-active {
   transform: translateX(0%) !important;
 }
 
+.p-hero {
+  background-image: url("/img/krakenimages-376KN_ISplE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.p-hero__title {
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-hero__subTitle {
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+}
+
+/* .p-hero__btn {
+  font-family: "Noto Sans Japanese";
+  background-color: #ccc;
+  color: black;
+  border-radius: 20px;
+  height: 50px;
+  width: 150px;
+  display: block;
+  position: absolute;
+  border: 1px solid #ccc;
+  top: 70%;
+} */
+
+.c-button {
+  border: none;
+  position: absolute;
+  top: 80%;
+  background-color: rgba(0, 0, 0, 0);
+  width: 200px;
+}
+
+.c-button a {
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 9999px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px 25px;
+  font-family: "Noto Sans Japanese";
+  text-decoration: none;
+  color: #333;
+  line-height: 1.8;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.c-button a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.c-button a:hover {
+  background: #333;
+  color: #fff;
+}
+.c-button a:hover:after {
+  right: 1.4rem;
+}
+.content {
+  height: 5000px;
+  margin-top: 60px;
+}
+
+.p-home__features {
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+}
+
+.p-home__section-title {
+  font-size: 32px;
+  margin: 40px 40px;
+  text-align: center;
+}
+
+.p-home__section-title::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  background-color: blue;
+  margin: 20px auto;
+}
+
+.p-home__feature-grid {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; */
+  display: flex;
+}
+
+.p-home__feature-title {
+  font-size: 20x;
+  margin-bottom: 20px;
+}
+
+.p-home__feature-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.p-home__feature-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.p-home__how-it-works {
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+}
+
+.p-home__steps {
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  gap: 20px;
+  display: flex;
+}
+
+.p-home__step {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.p-home__step-number {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  background-color: blue;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1024px) {
-  .nav-links {
+  .c-nav__link {
     width: 55%;
   }
 }
@@ -65,26 +256,75 @@ nav {
   body {
     overflow-x: hidden;
   }
-  .nav-links {
+
+  .l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .l-nav__list {
     position: absolute;
     right: 0;
-    height: 100%;
-    top: 10vh;
+    height: 100vh;
+    top: 50px;
     background-color: #333;
     display: block;
     text-align: center;
     width: 30%;
-    /* opacity: 0.3; */
+    opacity: 0.9;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
 
-  .nav-links li {
+  .l-nav__item {
     opacity: 0;
-    margin: 20px;
+    margin: 30px;
+  }
+  .c-nav__link {
+    /* color: #333; */
   }
 
-  .burger {
+  .c-burger {
+    display: block;
+  }
+
+  .p-hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("/img/krakenimages-376KN_ISplE-unsplash.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* height: 100vh; */
+  }
+
+  .p-hero__title {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  .p-hero__subTitle {
+    font-size: 18px;
+  }
+
+  .p-home__step-number {
+    /* font-size: 24px; */
+  }
+
+  .p-home__section-title {
+    font-size: 24px;
+    margin: 40px 40px;
+    text-align: center;
+  }
+
+  .p-home__feature-grid {
+    display: block;
+  }
+
+  .p-home__steps {
     display: block;
   }
 }
@@ -100,12 +340,12 @@ nav {
   }
 }
 
-.toggle .line1 {
+.js-toggle .c-burger__line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2 {
+.js-toggle .c-burger__line2 {
   opacity: 0;
 }
-.toggle .line3 {
+.js-toggle .c-burger__line3 {
   transform: rotate(405deg) translate(-5px, -6px);
 }

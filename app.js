@@ -1,10 +1,10 @@
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links li");
+const burger = document.querySelector(".c-burger");
+const nav = document.querySelector(".l-nav__list");
+const navLinks = document.querySelectorAll(".l-nav__item");
 
 burger.addEventListener("click", () => {
   // Toggle Nav
-  nav.classList.toggle("nav-active");
+  nav.classList.toggle("js-nav-active");
 
   // Animate Links
   navLinks.forEach((link, index) => {
@@ -18,5 +18,5 @@ burger.addEventListener("click", () => {
   });
 
   // Burger Animation
-  burger.classList.toggle("toggle");
+  burger.classList.toggle("js-toggle");
 });

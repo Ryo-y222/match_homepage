@@ -7,24 +7,115 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <h4>MATCH</h4>
-      </div>
+    <header class="l-header">
+      <nav class="l-nav">
+        <div class="l-header__logo">
+          <h4>MATCH</h4>
+        </div>
 
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul class="l-nav__list">
+          <li class="l-nav__item">
+            <a href="#" class="c-nav__link">Home</a>
+          </li>
+          <li class="l-nav__item">
+            <a href="#" class="c-nav__link">About</a>
+          </li>
+          <li class="l-nav__item">
+            <a href="#" class="c-nav__link">Services</a>
+          </li>
+          <li class="l-nav__item">
+            <a href="#" class="c-nav__link">Contact</a>
+          </li>
+        </ul>
 
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+        <div class="c-burger">
+          <div class="c-burger__line1"></div>
+          <div class="c-burger__line2"></div>
+          <div class="c-burger__line3"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="p-hero">
+      <h1 class="p-hero__title">創りたいを、繋げたい</h1>
+      <p class="p-hero__subTitle">CREATER MATCHING</p>
+      <button class="c-button">
+        <a href="">依頼してみる</a>
+      </button>
+    </div>
+    <section class="p-home__features">
+      <h2 class="p-home__section-title">matchの特徴</h2>
+      <div class="p-home__feature-grid">
+        <div class="p-home__feature-item">
+          <div class="p-home__feature-icon">🚀</div>
+          <h3 class="p-home__feature-title">シンプルな操作</h3>
+          <p class="p-home__feature-text">
+            複雑なオプションや入力項目を排除し、誰でも簡単に案件を投稿・応募できます。
+          </p>
+        </div>
+        <div class="p-home__feature-item">
+          <div class="p-home__feature-icon">💼</div>
+          <h3 class="p-home__feature-title">単発案件対応</h3>
+          <p class="p-home__feature-text">
+            短期間で完結する単発案件を見つけることができます。スキマ時間を有効活用しましょう。
+          </p>
+        </div>
+        <div class="p-home__feature-item">
+          <div class="p-home__feature-icon">🤝</div>
+          <h3 class="p-home__feature-title">レベニューシェア</h3>
+          <p class="p-home__feature-text">
+            アイデアを持つ人とスキルを持つ人をつなぎ、新しいサービスを一緒に立ち上げることができます。
+          </p>
+        </div>
+        <div class="p-home__feature-item">
+          <div class="p-home__feature-icon">💬</div>
+          <h3 class="p-home__feature-title">簡単コミュニケーション</h3>
+          <p class="p-home__feature-text">
+            案件ごとのパブリックな質問や、個別のダイレクトメッセージで円滑にコミュニケーションできます。
+          </p>
+        </div>
       </div>
-    </nav>
+    </section>
+
+    <section class="p-home__how-it-works">
+      <h2 class="p-home__section-title">ご利用の流れ</h2>
+      <div class="p-home__steps">
+        <div class="p-home__step">
+          <div class="p-home__step-number">1</div>
+          <h3 class="p-home__step-title">ユーザー登録</h3>
+          <p class="p-home__step-text">
+            メールアドレスとパスワードで簡単に登録できます。
+          </p>
+        </div>
+        <div class="p-home__step">
+          <div class="p-home__step-number">2</div>
+          <h3 class="p-home__step-title">案件を登録・検索</h3>
+          <p class="p-home__step-text">
+            案件を登録するか、既存の案件から興味のあるものを探します。
+          </p>
+        </div>
+        <div class="p-home__step">
+          <div class="p-home__step-number">3</div>
+          <h3 class="p-home__step-title">応募・メッセージ</h3>
+          <p class="p-home__step-text">
+            気になる案件に応募し、案件オーナーとメッセージでやり取りします。
+          </p>
+        </div>
+        <div class="p-home__step">
+          <div class="p-home__step-number">4</div>
+          <h3 class="p-home__step-title">マッチング成立</h3>
+          <p class="p-home__step-text">
+            条件が合えば、実際の業務開始！お互いにとって良い関係を築きましょう。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-home__cta-section">
+      <h2 class="p-home__cta-title">今すぐmatchを始めよう</h2>
+      <p class="p-home__cta-text">
+        新しい案件や共同開発のパートナーがあなたを待っています
+      </p>
+    </section>
 
     <script src="app.js"></script>
   </body>
